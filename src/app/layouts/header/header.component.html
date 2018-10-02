@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon fontSet="fa" fontIcon="fa-bars" style="font-size: 1.5em"></mat-icon>
+    </button>
+  </div>
+  <div><a href="#">TOGGLE</a></div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+    <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+      <li><a routerLink="/signin">Sign In</a></li>
+      <li><a routerLink="/signin">Connect</a></li>
+      <li><a routerLink="/signin">Save</a></li>
+    </ul>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,12 @@
+<section class="form-login">
+  <form fxFlex fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="onLogin(f)" fxLayoutGap="10px">
+    <mat-form-field>
+      <input type="email" matInput placeholder="Your Email" ngModel name="email">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="password" matInput placeholder="Your Password" ngModel name="password">
+    </mat-form-field>
+    <button mat-raised-button type="submit" color="primary">Login</button>
+    <a href="#">Forgot ?</a>
+  </form>
+</section>
